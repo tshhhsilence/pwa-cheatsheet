@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="stylesheet" href="../css/global-styles.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/subject.css" />
+
+    <title>Math24</title>
+  </head>
+
+  <body>
+    <nav class="search-shell">
+      <div class="search-box" id="search-box">
+        <span class="search-box__icon" aria-hidden="true">
+          <img src="../icons/zoom.svg" />
+        </span>
+
+        <input
+          class="search-box__input font-s"
+          type="search"
+          id="site-search"
+          placeholder="Поиск по шпаргалкам"
+          autocomplete="off"
+        />
+
+        <button
+          class="search-box__clear"
+          type="button"
+          aria-label="Очистить поиск"
+        >
+          <img src="../icons/close-circle-grey.svg" />
+        </button>
+
+        <div
+          class="search-results"
+          id="search-results"
+          hidden
+          aria-live="polite"
+        ></div>
+      </div>
+    </nav>
+
+    <header class="header header--subject">
+      <div class="header__content">
+        <a href="../" class="header__return-btn">
+          <img src="../icons/arw-left.svg" />
+        </a>
+        <div class="header__text">
+          <h1 class="header__title font-m">Математика</h1>
+          <h2 class="header__subtitle font-s">2-4 класс</h2>
+        </div>
+        <button>
+          <img />
+        </button>
+      </div>
+    </header>
+
+    <space></space>
+
+    <main>
+      <section class="content"></section>
+    </main>
+
+    <space></space>
+
+    <aside class="pwa">
+      <div class="pwa__content">
+        <p class="pwa__title font-m">Установите приложение</p>
+        <p class="pwa__subtitle font-s">
+          И&nbsp;добавьте на&nbsp;главный экран, чтобы было под рукой
+        </p>
+      </div>
+
+      <!-- <div>
+        <img src="" />
+      </div> -->
+
+      <button type="button" class="pwa__close">
+        <img src="../icons/close_white.svg" />
+      </button>
+    </aside>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>

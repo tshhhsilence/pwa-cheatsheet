@@ -17,6 +17,7 @@
   --text-w64: rgba(255, 255, 255, 0.64);
   --text-w: rgba(255, 255, 255, 1);
   --text-b64: rgba(0, 0, 0, 0.64);
+  --text-b48: rgba(0, 0, 0, 0.48);
 }
 
 *,
@@ -38,6 +39,8 @@ a {
 }
 button {
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 body {
   background-color: var(--grey);
@@ -93,12 +96,12 @@ space {
   letter-spacing: 0.007px;
 }
 
+nav,
 header,
 aside {
   width: 376px;
   margin: auto;
 }
-nav,
 main {
   width: 344px;
   margin: auto;
@@ -160,7 +163,7 @@ main {
   }
 }
 
-.content {
+.content--main {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -237,6 +240,4 @@ main {
 .pwa__close {
   width: 24px;
   height: 24px;
-  background-color: transparent;
-  border: 0;
 }
