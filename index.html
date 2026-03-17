@@ -33,10 +33,10 @@
 
     <space></space>
 
-    <nav>
-      <div class="search-box">
+    <nav class="search-shell">
+      <div class="search-box" id="search-box">
         <span class="search-box__icon" aria-hidden="true">
-          <img src="icons/zoom.svg" alt="" />
+          <img src="icons/zoom.svg" />
         </span>
 
         <input
@@ -52,9 +52,14 @@
           type="button"
           aria-label="Очистить поиск"
         >
-          <img src="icons/close-circle-grey.svg" alt="" />
+          <img src="icons/close-circle-grey.svg" />
         </button>
-        <!-- <div class="search-results" id="search-results"></div> -->
+
+        <div
+          class="search-results"
+          id="search-results"
+          aria-live="polite"
+        ></div>
       </div>
     </nav>
 
