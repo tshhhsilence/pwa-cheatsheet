@@ -1,13 +1,18 @@
 nav,
 header {
   width: 100%;
-  background-color: var(--bg-surface);
+  background-color: var(--w);
 }
 nav {
   padding: 4px 0;
 }
 header {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 body.search-active .search-shell {
   padding: 4px 0 16px;
@@ -29,7 +34,7 @@ body.search-active .search-shell {
   text-align: center;
 }
 .header__subtitle {
-  color: var(--text-b64);
+  color: var(--b64);
 }
 .header__return-btn {
   display: flex;
@@ -38,4 +43,18 @@ body.search-active .search-shell {
     width: 24px;
     height: 24px;
   }
+}
+
+.cheats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cheats__item {
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--w);
+  gap: 24px;
 }

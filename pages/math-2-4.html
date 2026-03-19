@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/global-styles.css" />
     <link rel="stylesheet" href="../css/search.css" />
     <link rel="stylesheet" href="../css/subject.css" />
-
+    <link rel="stylesheet" href="../css/math.css" />
     <title>Math24</title>
   </head>
 
@@ -62,7 +62,770 @@
     <space></space>
 
     <main>
-      <section class="content"></section>
+      <section
+        class="search-results"
+        id="page-toc"
+        data-subject-code="math"
+        data-grade-band="2-4"
+        data-page="math-2-4.html"
+      ></section>
+
+      <section class="cheats">
+        <div id="digits-numbers" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Цифры</h3>
+          <div class="cheat__content">
+            <div class="digits__block">
+              <div class="digits__number font-xxl">0</div>
+              <div class="digits__number-icon" style="--count: 0"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">1</div>
+              <div class="digits__number-icon" style="--count: 1"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">2</div>
+              <div class="digits__number-icon" style="--count: 2"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">3</div>
+              <div class="digits__number-icon" style="--count: 3"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">4</div>
+              <div class="digits__number-icon" style="--count: 4"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">5</div>
+              <div class="digits__number-icon" style="--count: 5"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">6</div>
+              <div class="digits__number-icon" style="--count: 6"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">7</div>
+              <div class="digits__number-icon" style="--count: 7"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">8</div>
+              <div class="digits__number-icon" style="--count: 8"></div>
+            </div>
+            <div class="digits__block">
+              <div class="digits__number font-xxl">9</div>
+              <div class="digits__number-icon" style="--count: 9"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="numbers" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Числа</h3>
+          <div class="cheat__content">
+            <div class="numbers__block">
+              <div class="numbers__title font-s">Однозначные</div>
+              <div class="numbers__divider font-s">→</div>
+              <div class="numbers__example font-s">от 10 до 99</div>
+            </div>
+            <div class="numbers__block">
+              <div class="numbers__title font-s">Двузначные</div>
+              <div class="numbers__divider font-s">→</div>
+              <div class="numbers__example font-s">от 100 до 999</div>
+            </div>
+            <div class="numbers__block">
+              <div class="numbers__title font-s">Трёхзначные</div>
+              <div class="numbers__divider font-s">→</div>
+              <div class="numbers__example font-s">от 1 до 9</div>
+            </div>
+            <div class="numbers__block">
+              <div class="numbers__title font-s">N-значные</div>
+              <div class="numbers__divider font-s">→</div>
+              <div class="numbers__example font-s">
+                все числа, в которых N цифр
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="number-composition" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Состав числа</h3>
+          <div class="cheat__content">
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">2 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">1</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 1; --apple-red: 1"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">3 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">2</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 2; --apple-red: 1"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">4 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">3</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 3; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">2</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 2; --apple-red: 2"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">5 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">4</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 4; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">3</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 3; --apple-red: 2"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">6 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">5</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 5; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">4</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 4; --apple-red: 2"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">3</span> +
+                    <span class="clr-red">3</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 3; --apple-red: 3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">7 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">6</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 6; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">5</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 5; --apple-red: 2"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">4</span> +
+                    <span class="clr-red">3</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 4; --apple-red: 3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">8 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">7</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 7; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">6</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 6; --apple-red: 2"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">5</span> +
+                    <span class="clr-red">3</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 5; --apple-red: 3"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">4</span> +
+                    <span class="clr-red">4</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 4; --apple-red: 4"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="num-compos__block">
+              <div class="num-compos__number font-s">9 =</div>
+
+              <div class="num-compos__list">
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">8</span> +
+                    <span class="clr-red">1</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 8; --apple-red: 1"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">7</span> +
+                    <span class="clr-red">2</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 7; --apple-red: 2"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">6</span> +
+                    <span class="clr-red">3</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 6; --apple-red: 3"
+                  ></div>
+                </div>
+
+                <div class="num-compos__item">
+                  <div class="compos__example font-s">
+                    <span class="clr-orange">5</span> +
+                    <span class="clr-red">4</span>
+                  </div>
+
+                  <div
+                    class="num-compos__visual"
+                    style="--apple-orange: 5; --apple-red: 4"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="place-value-add-subtract" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Разряды числа</h3>
+          <div class="cheat__content">
+            <div class="pvas__block">
+              <img
+                class="pvas__place-value"
+                src="../imgs/pvas__place-value.svg"
+              />
+            </div>
+
+            <div class="pvas__block">
+              <h4 class="cheat__subtitle font-l">Сложение</h4>
+              <img class="pvas__add" src="../imgs/pvas__add.svg" />
+            </div>
+
+            <div class="pvas__block">
+              <h4 class="cheat__subtitle font-l">Вычитание</h4>
+              <img
+                class="pvas__place-substract"
+                src="../imgs/pvas__substract.svg"
+              />
+            </div>
+
+            <section class="props__list">
+              <div class="props__item">
+                <div class="props__name font-s">Свойства нуля</div>
+                <div class="props__example font-m">a + 0 = a; a − 0 = a</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Переместительное свойство сложения
+                </div>
+                <div class="props__example font-m">a + b = b + a</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Сочетательное свойство сложения
+                </div>
+                <div class="props__example font-m">
+                  (a + b) + с = a + (b + c) = a + b + c
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Свойство вычитания суммы из числа
+                </div>
+                <div class="props__example font-m">a − (b + c) = a − b − c</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Свойство вычитания числа из суммы
+                </div>
+                <div class="props__example font-m">
+                  (a + b) − c = (a − c) + b = a + (b − c)
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">Среднее арифметическое</div>
+                <div class="props__example font-m">
+                  <div class="formula">
+                    <span class="formula__variable">c = &nbsp;</span>
+
+                    <div class="formula__fraction">
+                      <div class="formula__numerator">
+                        c<sub>1</sub> + c<sub>2</sub> + ... + c<sub>n</sub>
+                      </div>
+                      <div class="formula__denominator">n</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="multiplication" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Умножение</h3>
+          <div class="cheat__content">
+            <div class="mult__block">
+              <img class="mult__example" src="../imgs/multiplication.svg" />
+              <div class="mult__hint">
+                <div class="hint__text">
+                  От перестановки множителей произведение не меняется.
+                </div>
+                <img src="../icons/lightning.svg" />
+              </div>
+            </div>
+
+            <section class="props__list">
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Переместительное свойство умножения
+                </div>
+                <div class="props__example font-m">a × b = b × a</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Сочетательное свойство умножения
+                </div>
+                <div class="props__example font-m">
+                  (a × b) × c = a × (b × c)
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Распределительное свойство умножения
+                </div>
+                <div class="props__example font-m">
+                  <label class="props__example-label font-xs"
+                    >Относительно сложения:</label
+                  >
+                  (a + b) × c = a × c + b × c
+                </div>
+                <div class="props__example font-m">
+                  <label class="props__example-label font-xs"
+                    >Относительно вычитания:</label
+                  >
+                  (a − b) × c = a × c − b × c
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Свойство нуля: если любое число умножить на 0, получится 0
+                </div>
+                <div class="props__example font-m">а × 0 = 0</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Свойство единицы: если любое число умножить на 1, получится то
+                  же число
+                </div>
+                <div class="props__example font-m">а × 1 = a</div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="division" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Деление</h3>
+          <div class="cheat__content">
+            <div class="division__block">
+              <img class="division__example" src="../imgs/division.svg" />
+            </div>
+
+            <section class="props__list">
+              <div class="props__item">
+                <div class="props__name font-s">
+                  При делении 0 на число всегда получается 0
+                </div>
+                <div class="props__example font-m">0 ÷ a = 0</div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  При делении любого числа на 1 получается то же число
+                </div>
+                <div class="props__example font-m">a ÷ 1 = a</div>
+              </div>
+
+              <div class="props__item props__item--false">
+                <div class="props__name font-s">На ноль делить нельзя</div>
+                <div
+                  class="props__example font-m"
+                  style="text-decoration: line-through"
+                >
+                  а ÷ 0
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="find-unknown" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Как найти неизвестное</h3>
+          <div class="cheat__content">
+            <section class="props__list">
+              <div class="props__item">
+                <div class="props__name font-s">Любой порядок:</div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    a + <span class="clr-orange">?</span> = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = b − a
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Вычитаемое: вычти разность из уменьшаемого
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    a - <span class="clr-orange">?</span> = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = a − b
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Уменьшаемое: сложи вычитаемое и разность
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> - a = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = a + b
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Множитель: раздели произведение на другой множитель
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    a × <span class="clr-orange">?</span> = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = b ÷ a =
+                    <div class="formula__fraction">
+                      <div class="formula__numerator">b</div>
+                      <div class="formula__denominator">a</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Делимое: умножь делитель на частное
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> ÷ a = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = a × b
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Делитель: раздели делимое на частное
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    a ÷ <span class="clr-orange">?</span> = b
+                  </div>
+                  →
+                  <div class="example__part">
+                    <span class="clr-orange">?</span> = a ÷ b
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="order-of-operations" class="cheats__item">
+          <h3 class="cheat__title font-xxl">Порядок выполнения действий</h3>
+          <div class="cheat__content">
+            <section class="props__list">
+              <div class="props__item">
+                <div class="props__name font-s">Любой порядок:</div>
+                <div class="props__example font-m">
+                  <div class="example__part">a + b − c</div>
+
+                  <div class="example__part">a − b + c</div>
+
+                  <div class="example__part">a × b ÷ c</div>
+
+                  <div class="example__part">a ÷ b × c</div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Cначала <span class="clr-orange">×</span> и
+                  <span class="clr-orange">÷</span>, потом
+                  <span class="clr-blue">+</span> и
+                  <span class="clr-blue">−</span>:
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    a <span class="clr-blue">+</span> b
+                    <span class="clr-orange">×</span> c
+                  </div>
+
+                  <div class="example__part">
+                    a <span class="clr-blue">−</span> b
+                    <span class="clr-orange">×</span> c
+                  </div>
+
+                  <div class="example__part">
+                    a <span class="clr-blue">+</span> b
+                    <span class="clr-orange">÷</span> c
+                  </div>
+
+                  <div class="example__part">
+                    a <span class="clr-blue">−</span> b
+                    <span class="clr-orange">÷</span> c
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Cначала действия в <span class="clr-orange">( )</span>, потом
+                  остальные:
+                </div>
+                <div class="props__example font-m">
+                  <div class="example__part">
+                    (a <span class="clr-orange">+</span> b)
+                    <span class="clr-blue">×</span> c
+                  </div>
+
+                  <div class="example__part">
+                    c <span class="clr-blue">×</span> (a
+                    <span class="clr-orange">−</span> b)
+                  </div>
+
+                  <div class="example__part">
+                    (a <span class="clr-orange">+</span> b)
+                    <span class="clr-blue">÷</span> c
+                  </div>
+
+                  <div class="example__part">
+                    c <span class="clr-blue">÷</span> (a
+                    <span class="clr-orange">−</span> b)
+                  </div>
+                </div>
+              </div>
+
+              <div class="props__item">
+                <div class="props__name font-s">
+                  Cначала действия в <span class="clr-orange">( )</span>,
+                  <span class="clr-orange">×</span> и
+                  <span class="clr-orange">÷</span>,<br />
+                  в конце <span class="clr-blue">+</span> и
+                  <span class="clr-blue">-</span>:
+                </div>
+
+                <div class="props__example columns_1 font-m">
+                  <div class="example__part">
+                    (a <span class="clr-orange">+</span> b)
+                    <span class="clr-orange">×</span> c
+                    <span class="clr-blue">+</span> d
+                  </div>
+
+                  <div class="example__part">
+                    (a <span class="clr-orange">+</span> b)
+                    <span class="clr-orange">÷</span> c
+                    <span class="clr-blue">+</span> d
+                  </div>
+
+                  <div class="example__part">
+                    d <span class="clr-blue">+</span> (a
+                    <span class="clr-orange">+</span> b)
+                    <span class="clr-orange">÷</span> c
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <space></space>

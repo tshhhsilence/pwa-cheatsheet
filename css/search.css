@@ -76,10 +76,10 @@ body.search-active .search-shell {
   inset: 0;
   z-index: 1000;
   width: 100%;
-  background: var(--bg-surface);
+  background: var(--w);
   padding: 16px 0;
   overflow-y: auto;
-  scrollbar-gutter: stable both-edges;
+  /* scrollbar-gutter: stable both-edges; */
 }
 
 .search-box {
@@ -99,7 +99,7 @@ body.search-active .search-results {
 }
 
 .search-results__subject {
-  color: var(--text-b64);
+  color: var(--b64);
 }
 
 .search-results__list {
@@ -123,10 +123,19 @@ body.search-active .search-results {
   gap: 8px;
 }
 .search-results__grade {
-  color: var(--text-b48);
+  color: var(--b48);
 }
 
 .search-results__arrow {
   width: 24px;
   height: 24px;
+}
+
+#page-toc {
+  .search-results__item {
+    background-color: var(--w);
+  }
+  .search-results__list {
+    gap: 8px;
+  }
 }

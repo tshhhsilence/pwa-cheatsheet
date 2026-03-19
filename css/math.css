@@ -1,0 +1,252 @@
+.formula {
+  display: flex;
+  align-items: center;
+}
+.formula__fraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formula__numerator {
+  border-bottom: 1px solid var(--black);
+}
+
+.props__name {
+  background-color: var(--orange60);
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+  color: var(--w);
+}
+.props__example {
+  padding: 12px;
+  background-color: var(--grey);
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.props__example-label {
+  color: var(--b48);
+}
+.props__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.props__example:not(:last-child) {
+  border-bottom: 2px solid var(--w);
+}
+.props__item--false {
+  .props__name {
+    background-color: var(--red);
+  }
+  .props__example {
+    background-color: var(--red10);
+  }
+}
+
+#digits-numbers {
+  .digits__number {
+    color: var(--orange);
+  }
+  .digits__block {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .digits__block:not(:last-child) {
+    border-bottom: 2px solid var(--grey);
+  }
+  .digits__number-icon {
+    --count: 0;
+    --size: 24px;
+
+    width: calc(var(--count) * var(--size));
+    height: var(--size);
+
+    background-image: url("../imgs/apple_small.svg");
+    background-repeat: repeat-x;
+    background-size: var(--size) var(--size);
+    background-position: left center;
+    flex-shrink: 0;
+  }
+}
+
+#numbers {
+  .cheat__content {
+    background-color: var(--grey);
+    border-radius: 12px;
+  }
+  .numbers__block {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+  }
+  .numbers__block:not(:last-child) {
+    border-bottom: 2px solid var(--w);
+  }
+  .numbers__title {
+    flex: 1;
+  }
+  .numbers__example {
+    flex: 1;
+    color: var(--orange);
+  }
+}
+
+#number-composition {
+  .num-compos__block {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0 12px;
+    padding: 12px;
+    align-items: start;
+  }
+
+  .num-compos__block:not(:last-child) {
+    border-bottom: 2px solid var(--grey);
+  }
+
+  .num-compos__number {
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .num-compos__list {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .num-compos__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .compos__example {
+    flex: 0 0 auto;
+    min-width: 36px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .num-compos__visual {
+    --apple-size: 20px;
+    --apple-gap: 2px;
+    --apple-step: calc(var(--apple-size) + var(--apple-gap));
+
+    position: relative;
+    height: var(--apple-size);
+    width: calc(
+      (var(--apple-orange) * var(--apple-step)) +
+        (var(--apple-red) * var(--apple-step))
+    );
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .num-compos__visual::before,
+  .num-compos__visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: var(--apple-size);
+
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: var(--apple-step) var(--apple-size);
+  }
+
+  .num-compos__visual::before {
+    left: 0;
+    width: calc(var(--apple-orange) * var(--apple-step));
+    background-image: url("../imgs/apple_small.svg");
+  }
+
+  .num-compos__visual::after {
+    left: calc(var(--apple-orange) * var(--apple-step));
+    width: calc(var(--apple-red) * var(--apple-step));
+    background-image: url("../imgs/apple_small_red.svg");
+  }
+}
+
+#place-value-add-subtract {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .pvas__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+#multiplication {
+  .mult__hint {
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    background-color: var(--grey);
+  }
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .mult__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+#division {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+#find-unknown {
+  .props__example {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .example__part {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+}
+
+#order-of-operations {
+  .props__name {
+    background-color: var(--grey);
+    color: var(--black);
+    border-bottom: 2px solid var(--w);
+  }
+  .example__part {
+    background-color: var(--w48);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .props__example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .columns_1 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -9,15 +9,29 @@
 }
 
 :root {
-  --bg-contrast: #ff6d00;
-  --bg-surface: #fff;
+  --orange: #ff6d00;
+  --orange60: #ff9e00;
+  --blue60: #00c1ff;
   --grey: #f4f4f4;
-  --text-main: #000;
-  --text-w8: rgba(255, 255, 255, 0.8);
-  --text-w64: rgba(255, 255, 255, 0.64);
-  --text-w: rgba(255, 255, 255, 1);
-  --text-b64: rgba(0, 0, 0, 0.64);
-  --text-b48: rgba(0, 0, 0, 0.48);
+  --black: #000;
+  --red: #ff4545;
+  --red10: #ffebeb;
+  --w8: rgba(255, 255, 255, 0.8);
+  --w64: rgba(255, 255, 255, 0.64);
+  --w48: rgba(255, 255, 255, 0.48);
+  --w: rgba(255, 255, 255, 1);
+  --b64: rgba(0, 0, 0, 0.64);
+  --b48: rgba(0, 0, 0, 0.48);
+}
+
+.clr-orange {
+  color: var(--orange);
+}
+.clr-red {
+  color: var(--red);
+}
+.clr-blue {
+  color: var(--blue60);
 }
 
 *,
@@ -35,7 +49,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--black);
 }
 button {
   cursor: pointer;
@@ -108,7 +122,7 @@ main {
 }
 
 .header--main {
-  background-color: var(--bg-contrast);
+  background-color: var(--orange);
   border-radius: 16px;
   padding: 16px;
   display: flex;
@@ -126,14 +140,14 @@ main {
   height: 32px;
 }
 .logo__divider {
-  background-color: var(--text-w8);
+  background-color: var(--w8);
   width: 1px;
   height: 16px;
   border-radius: 8px;
 }
 .logo__text {
   white-space: nowrap;
-  color: var(--text-w8);
+  color: var(--w8);
 }
 
 .intro {
@@ -147,10 +161,10 @@ main {
   gap: 8px;
 }
 .intro__title {
-  color: var(--text-w);
+  color: var(--w);
 }
 .intro__subtitle {
-  color: var(--text-w8);
+  color: var(--w8);
 }
 .intro__img {
   width: 115px;
@@ -170,7 +184,7 @@ main {
 }
 
 .subject {
-  background-color: var(--bg-surface);
+  background-color: var(--w);
   border-radius: 16px;
   padding: 16px;
   display: flex;
@@ -186,7 +200,7 @@ main {
   gap: 8px;
 }
 .subject__subtitle {
-  color: var(--text-b64);
+  color: var(--b64);
 }
 .subject__img {
   width: 52px;
@@ -220,7 +234,7 @@ main {
   border-radius: 8px;
 }
 .pwa {
-  background-color: var(--bg-contrast);
+  background-color: var(--orange);
   display: flex;
   gap: 16px;
   border-radius: 16px;
@@ -232,10 +246,10 @@ main {
   gap: 8px;
 }
 .pwa__title {
-  color: var(--text-w);
+  color: var(--w);
 }
 .pwa__subtitle {
-  color: var(--text-w64);
+  color: var(--w64);
 }
 .pwa__close {
   width: 24px;

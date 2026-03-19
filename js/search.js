@@ -2,6 +2,7 @@ const input = document.getElementById('site-search');
 const searchBox = document.querySelector('.search-box');
 const clearBtn = document.querySelector('.search-box__clear');
 const searchResults = document.getElementById('search-results');
+const pageToc = document.getElementById('page-toc');
 const body = document.body;
 
 const SEARCH_INDEX_URL = '../data/search-index.json';
@@ -56,12 +57,7 @@ async function loadSearchIndex() {
 
 function getItemText(item) {
   const keywords = Array.isArray(item.keywords) ? item.keywords.join(' ') : '';
-  return normalizeText([
-    item.subject,
-    item.grade,
-    item.title,
-    keywords,
-  ].join(' '));
+  return normalizeText([item.subject, item.grade, item.title, keywords].join(' '));
 }
 
 function getItemScore(item, query) {
@@ -127,6 +123,29 @@ function groupResults(items) {
   return [...groups.entries()];
 }
 
+function renderItemsList(items, options = {}) {
+  const {
+    showGrade = true,
+    hrefBuilder = (item) => `${item.page || ''}${item.hash || ''}`,
+  } = options;
+
+  return `
+    <div class="search-results__list">
+      ${items
+        .map((item) => `
+          <a class="search-results__item" href="${escapeHtml(hrefBuilder(item))}">
+            <div class="search-results__text">
+              ${showGrade ? `<p class="search-results__grade font-s">${escapeHtml(item.grade || '')}</p>` : ''}
+              <p class="search-results__title font-m">${escapeHtml(item.title || '')}</p>
+            </div>
+            <img src="../icons/arw-rght.svg" class="search-results__arrow" alt="" aria-hidden="true" />
+          </a>
+        `)
+        .join('')}
+    </div>
+  `;
+}
+
 function renderResults(items, query) {
   if (!searchResults) return;
 
@@ -149,30 +168,57 @@ function renderResults(items, query) {
     .map(([subject, subjectItems]) => `
       <section class="search-results__group">
         <p class="search-results__subject font-s">${escapeHtml(subject)}</p>
-        <div class="search-results__list">
-          ${subjectItems
-            .map((item) => `
-              <a class="search-results__item" href="${escapeHtml(`${item.page || ''}${item.hash || ''}`)}">
-                <div class="search-results__text">
-                  <p class="search-results__grade font-s">${escapeHtml(item.grade || '')}</p>
-                  <p class="search-results__title font-m">${escapeHtml(item.title || '')}</p>
-                </div>
-                <img src="../icons/arw-rght.svg" class="search-results__arrow" />
-              </a>
-            `)
-            .join('')}
-        </div>
+        ${renderItemsList(subjectItems)}
       </section>
     `)
     .join('');
 }
 
+function getCurrentPageName() {
+  return window.location.pathname.split('/').filter(Boolean).pop() || '';
+}
+
+function filterPageTocItems(items, filters = {}) {
+  const {
+    subjectCode = '',
+    gradeBand = '',
+    page = '',
+  } = filters;
+
+  const currentPage = page || getCurrentPageName();
+
+  return items.filter((item) => {
+    const itemPage = (item.page || '').split('/').filter(Boolean).pop() || '';
+    const isSubjectMatch = !subjectCode || item.subjectCode === subjectCode;
+    const isGradeMatch = !gradeBand || item.gradeBand === gradeBand;
+    const isPageMatch = !currentPage || itemPage === currentPage;
+
+    return isSubjectMatch && isGradeMatch && isPageMatch && item.hash;
+  });
+}
+
+function renderPageToc() {
+  if (!pageToc) return;
+
+  const { subjectCode, gradeBand, page } = pageToc.dataset;
+  const items = filterPageTocItems(searchIndex, { subjectCode, gradeBand, page });
+
+  pageToc.innerHTML = renderItemsList(items, {
+    showGrade: false,
+    hrefBuilder: (item) => item.hash || '#',
+  });
+}
+
 function setSearchState(isActive) {
+  if (!searchBox) return;
+
   searchBox.classList.toggle('search-box--filled', isActive);
   body.classList.toggle('search-active', isActive);
 }
 
 async function updateSearch() {
+  if (!input) return;
+
   const query = input.value.trim();
   const isActive = query.length > 0;
 
@@ -187,28 +233,36 @@ async function updateSearch() {
   renderResults(findMatches(query), query);
 }
 
-input.addEventListener('focus', () => {
-  if (input.value.trim()) {
-    setSearchState(true);
-    searchResults.hidden = false;
-  }
-});
+if (input) {
+  input.addEventListener('focus', () => {
+    if (input.value.trim()) {
+      setSearchState(true);
+      if (searchResults) {
+        searchResults.hidden = false;
+      }
+    }
+  });
 
-input.addEventListener('input', updateSearch);
+  input.addEventListener('input', updateSearch);
+}
 
-clearBtn.addEventListener('click', () => {
-  input.value = '';
-  updateSearch();
-  input.focus();
-});
+if (clearBtn && input) {
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    updateSearch();
+    input.focus();
+  });
+}
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
+  if (event.key === 'Escape' && input) {
     input.value = '';
     input.blur();
     updateSearch();
   }
 });
 
-loadSearchIndex();
-updateSearch();
+loadSearchIndex().then(() => {
+  renderPageToc();
+  updateSearch();
+});
