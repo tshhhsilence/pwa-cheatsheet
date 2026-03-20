@@ -11,6 +11,14 @@
   border-bottom: 1px solid var(--black);
 }
 
+.block__hint {
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  background-color: var(--grey);
+}
+
 .props__name {
   background-color: var(--orange60);
   padding: 12px;
@@ -188,13 +196,6 @@
 }
 
 #multiplication {
-  .mult__hint {
-    padding: 12px;
-    border-radius: 12px;
-    display: flex;
-    gap: 10px;
-    background-color: var(--grey);
-  }
   .cheat__content {
     display: flex;
     flex-direction: column;
@@ -248,5 +249,212 @@
   }
   .columns_1 {
     grid-template-columns: 1fr;
+  }
+}
+
+#units {
+  .cheat__content {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .units__length,
+  .units__time,
+  .units__weight {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .props__example {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+  }
+  .example__part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  .props__example:first-child {
+    border-radius: 12px 12px 0 0;
+  }
+  .props__example:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+#addition-table,
+#multiplication-table {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.fact-table {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fact-table__grid {
+  --fact-table-cols: 11;
+  display: grid;
+  grid-template-columns: repeat(var(--fact-table-cols), minmax(0, 1fr));
+  width: 100%;
+}
+
+.fact-table__cell {
+  min-width: 0;
+  aspect-ratio: 28.36 / 30;
+  padding: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: inset 0 0 0 0.3px #d9d9d9;
+  background-color: var(--grey);
+}
+
+.fact-table__cell--head,
+.fact-table__cell--corner {
+  background-color: var(--orange60);
+  color: var(--w);
+}
+
+.fact-table__cell--accent {
+  background-color: var(--orange20);
+}
+
+#geometry-objects,
+#figures {
+  .object__dot {
+    background-color: var(--orange);
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+  }
+  .object__line {
+    background-color: var(--orange);
+    width: 100%;
+    height: 3px;
+  }
+  .geometry__object {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background-color: var(--grey);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .object__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 40px;
+  }
+
+  .geometry__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
+#figures {
+  .figures__flat,
+  .figures__3d {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .figures__dimensions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+#perimeter-area-volume {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cheat__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .props__list {
+    gap: 8px;
+  }
+  .props__example {
+    flex-direction: row;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    align-items: center;
+  }
+  .props__example-label,
+  .example__part {
+    text-align: center;
+  }
+  .props__item {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .example__part {
+    flex: 1;
+  }
+  .flex05 {
+    flex: 0.5;
+  }
+  .block__hint {
+    background-color: var(--orange10);
+  }
+  .--w-dividers {
+    padding: 0px;
+    .props__example:not(:last-child) {
+      border-bottom: 1px solid var(--w);
+    }
+    .props__example {
+      padding: 12px;
+    }
+  }
+}
+
+#perimeter-formulas,
+#area-formulas,
+#volume-formulas {
+  .formulas__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .formulas__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--grey);
+  }
+  .formulas__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }

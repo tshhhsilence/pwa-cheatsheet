@@ -45,7 +45,7 @@ body.search-active .search-shell {
   }
 }
 
-.cheats {
+.cheats__list {
   display: flex;
   flex-direction: column;
   gap: 24px;
