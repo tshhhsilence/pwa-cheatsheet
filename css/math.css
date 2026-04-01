@@ -11,48 +11,6 @@
   border-bottom: 1px solid var(--black);
 }
 
-.block__hint {
-  padding: 12px;
-  border-radius: 12px;
-  display: flex;
-  gap: 10px;
-  background-color: var(--grey);
-}
-
-.props__name {
-  background-color: var(--orange60);
-  padding: 12px;
-  border-radius: 12px 12px 0 0;
-  color: var(--w);
-}
-.props__example {
-  padding: 12px;
-  background-color: var(--grey);
-  border-radius: 0 0 12px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.props__example-label {
-  color: var(--b48);
-}
-.props__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.props__example:not(:last-child) {
-  border-bottom: 2px solid var(--w);
-}
-.props__item--false {
-  .props__name {
-    background-color: var(--red);
-  }
-  .props__example {
-    background-color: var(--red10);
-  }
-}
-
 #digits-numbers {
   .digits__number {
     color: var(--orange);
@@ -182,47 +140,38 @@
   }
 }
 
-#place-value-add-subtract {
+#place-value-add-subtract,
+#multiplication,
+#division,
+#units,
+#addition-table,
+#multiplication-table,
+#perimeter-area-volume {
   .cheat__content {
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-  .pvas__block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
   }
 }
 
-#multiplication {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .mult__block {
+#place-value-add-subtract,
+#multiplication,
+#units,
+#perimeter-area-volume {
+  .cheat__section {
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-}
-
-#division {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 }
 
 #find-unknown {
-  .props__example {
+  .info-list__example {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .example__part {
+  .info-list__part {
     flex: 1;
     display: flex;
     align-items: center;
@@ -232,46 +181,34 @@
 }
 
 #order-of-operations {
-  .props__name {
+  .info-list__name {
     background-color: var(--grey);
     color: var(--black);
     border-bottom: 2px solid var(--w);
   }
-  .example__part {
+  .info-list__part {
     background-color: var(--w48);
     padding: 12px;
     border-radius: 8px;
   }
-  .props__example {
+  .info-list__example {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
-  .columns_1 {
+  .info-list__example--single {
     grid-template-columns: 1fr;
   }
 }
 
 #units {
-  .cheat__content {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-  }
-  .units__length,
-  .units__time,
-  .units__weight {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .props__example {
+  .info-list__example {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-radius: 0;
   }
-  .example__part {
+  .info-list__part {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -279,20 +216,11 @@
     align-items: center;
     text-align: center;
   }
-  .props__example:first-child {
+  .info-list__example:first-child {
     border-radius: 12px 12px 0 0;
   }
-  .props__example:last-child {
+  .info-list__example:last-child {
     border-radius: 0 0 12px 12px;
-  }
-}
-
-#addition-table,
-#multiplication-table {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 }
 
@@ -313,11 +241,9 @@
   min-width: 0;
   aspect-ratio: 28.36 / 30;
   padding: 4px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-shadow: inset 0 0 0 0.3px #d9d9d9;
   background-color: var(--grey);
 }
@@ -383,32 +309,23 @@
   }
 }
 
-#perimeter-area-volume {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .cheat__block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .props__list {
+#perimeter-area-volume,
+#integers-place-value {
+  .info-list {
     gap: 8px;
   }
-  .props__example {
+  .info-list__example {
     flex-direction: row;
     border: 0;
     padding: 0;
     background-color: transparent;
     align-items: center;
   }
-  .props__example-label,
-  .example__part {
+  .info-list__label,
+  .info-list__part {
     text-align: center;
   }
-  .props__item {
+  .info-list__item {
     padding: 12px;
     border-radius: 12px;
     background-color: var(--grey);
@@ -416,21 +333,19 @@
     flex-direction: column;
     gap: 8px;
   }
-  .example__part {
+  .info-list__part {
     flex: 1;
   }
-  .flex05 {
+  .info-list__part--compact {
     flex: 0.5;
   }
-  .block__hint {
-    background-color: var(--orange10);
-  }
-  .--w-dividers {
-    padding: 0px;
-    .props__example:not(:last-child) {
-      border-bottom: 1px solid var(--w);
+  .info-list__item--with-dividers {
+    padding: 0;
+    gap: 0px;
+    .info-list__example:not(:last-child) {
+      border-bottom: 2px solid var(--w);
     }
-    .props__example {
+    .info-list__example {
       padding: 12px;
     }
   }
@@ -438,7 +353,8 @@
 
 #perimeter-formulas,
 #area-formulas,
-#volume-formulas {
+#volume-formulas,
+#function-graphs {
   .formulas__list {
     display: flex;
     flex-direction: column;
@@ -456,5 +372,170 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
+  }
+}
+
+#integers-place-value {
+  .info-list--matryoshka {
+    .info-list__item {
+      background-color: var(--orange10);
+      padding: 0;
+    }
+    .info-list__example {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      flex-direction: column;
+      gap: 8px;
+      .info-list__example {
+        background-color: var(--orange50);
+        border-radius: 8px;
+        .info-list__example {
+          background-color: var(--orange90);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+#divisibility {
+  span {
+    display: contents;
+  }
+}
+
+#factorization {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  /* .info-list__example {
+    flex-direction: row;
+    
+  }
+  .info-list__part:first-child,
+  .info-list__part:last-child,
+  .info-list__label:first-child,
+  .info-list__label:last-child {
+    flex: 1;
+    text-align: center;
+  } */
+  .info-list__example {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+  }
+  .info-list__example--single {
+    grid-template-columns: 1fr;
+  }
+  .info-list__name {
+    text-align: center;
+  }
+}
+
+#fractions {
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+#equations {
+  .info-list__example {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+  }
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+#powers,
+#roots {
+  .info-list__example {
+    align-items: center;
+  }
+  .info-list {
+    gap: 8px;
+  }
+}
+
+#roots {
+  .info-list__label {
+    text-align: center;
+  }
+}
+
+#triangles {
+  .info-list__part {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--w48);
+  }
+  .info-list__example {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    .info-list__part {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-list__column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+  }
+  .info-list__example--single {
+    justify-content: center;
+  }
+}
+
+#quadratic-equation {
+  .info-list__example {
+    flex-direction: row;
+    align-items: center;
+  }
+  .info-list__example--single {
+    justify-content: center;
+  }
+  .cheat__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .info-list__item--row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    .info-list__example {
+      border-radius: 8px;
+      flex: 1;
+      justify-content: center;
+    }
+  }
+  .info-list__name {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .info-list__example--single-row {
+    align-items: baseline;
   }
 }
