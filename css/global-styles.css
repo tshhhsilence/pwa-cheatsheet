@@ -67,7 +67,7 @@ body {
 .no-wrap {
   white-space: nowrap;
 }
-space {
+.page-spacer {
   display: block;
   margin-bottom: 16px;
 }

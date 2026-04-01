@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
 }
+.formula__label {
+  white-space: nowrap;
+}
 .formula__numerator {
   border-bottom: 1px solid var(--black);
 }
@@ -140,31 +143,6 @@
   }
 }
 
-#place-value-add-subtract,
-#multiplication,
-#division,
-#units,
-#addition-table,
-#multiplication-table,
-#perimeter-area-volume {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-#place-value-add-subtract,
-#multiplication,
-#units,
-#perimeter-area-volume {
-  .cheat__section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
 #find-unknown {
   .info-list__example {
     flex-direction: row;
@@ -222,40 +200,6 @@
   .info-list__example:last-child {
     border-radius: 0 0 12px 12px;
   }
-}
-
-.fact-table {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.fact-table__grid {
-  --fact-table-cols: 11;
-  display: grid;
-  grid-template-columns: repeat(var(--fact-table-cols), minmax(0, 1fr));
-  width: 100%;
-}
-
-.fact-table__cell {
-  min-width: 0;
-  aspect-ratio: 28.36 / 30;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 0 0 0.3px #d9d9d9;
-  background-color: var(--grey);
-}
-
-.fact-table__cell--head,
-.fact-table__cell--corner {
-  background-color: var(--orange60);
-  color: var(--w);
-}
-
-.fact-table__cell--accent {
-  background-color: var(--orange20);
 }
 
 #geometry-objects,
@@ -377,7 +321,7 @@
 }
 
 #integers-place-value {
-  .info-list--matryoshka {
+  .info-list--nested {
     .info-list__item {
       background-color: var(--orange10);
       padding: 0;
@@ -407,11 +351,6 @@
 }
 
 #factorization {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
   /* .info-list__example {
     flex-direction: row;
     
@@ -437,25 +376,12 @@
   }
 }
 
-#fractions {
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
 #equations {
   .info-list__example {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     text-align: center;
-  }
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 }
 
@@ -512,11 +438,6 @@
   }
   .info-list__example--single {
     justify-content: center;
-  }
-  .cheat__content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
   }
   .info-list__item--row {
     display: flex;
