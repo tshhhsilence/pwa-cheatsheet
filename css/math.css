@@ -535,7 +535,4 @@
     align-items: baseline;
     justify-content: space-between;
   }
-  .info-list__example--single-row {
-    align-items: baseline;
-  }
 }
