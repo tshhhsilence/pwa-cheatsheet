@@ -11,12 +11,12 @@
   white-space: nowrap;
 }
 .formula__numerator {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--b);
 }
 
 #digits-numbers {
   .digits__number {
-    color: var(--orange);
+    color: var(--orange90);
   }
   .digits__block {
     display: flex;
@@ -60,7 +60,7 @@
   }
   .numbers__example {
     flex: 1;
-    color: var(--orange);
+    color: var(--orange90);
   }
 }
 
@@ -161,7 +161,7 @@
 #order-of-operations {
   .info-list__name {
     background-color: var(--grey);
-    color: var(--black);
+    color: var(--b);
     border-bottom: 2px solid var(--w);
   }
   .info-list__part {
@@ -205,13 +205,13 @@
 #geometry-objects,
 #figures {
   .object__dot {
-    background-color: var(--orange);
+    background-color: var(--orange90);
     width: 18px;
     height: 18px;
     border-radius: 100px;
   }
   .object__line {
-    background-color: var(--orange);
+    background-color: var(--orange90);
     width: 100%;
     height: 3px;
   }
@@ -336,7 +336,7 @@
         background-color: var(--orange50);
         border-radius: 8px;
         .info-list__example {
-          background-color: var(--orange90);
+          background-color: var(--orange-custom);
           border-radius: 4px;
         }
       }
@@ -432,6 +432,9 @@
 }
 
 #quadratic-equation {
+  .info-list__part {
+    display: flex;
+  }
   .info-list__example {
     flex-direction: row;
     align-items: center;

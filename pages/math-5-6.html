@@ -49,9 +49,7 @@
           <h1 class="header__title font-m">Математика</h1>
           <h2 class="header__subtitle font-s">5-6 класс</h2>
         </div>
-        <button>
-          <img />
-        </button>
+        <div style="visibility: hidden"></div>
       </div>
     </header>
     <div aria-hidden="true" class="page-spacer"></div>
@@ -66,7 +64,7 @@
       <section class="cheats__list">
         <div class="cheats__item" id="integers-place-value">
           <h3 class="cheat__title font-xxl">Какие бывают целые числа?</h3>
-          <div class="cheat__section">
+          <div class="cheat__content">
             <section class="info-list">
               <div class="info-list__item info-list__item--with-dividers">
                 <div class="info-list__example font-m">
@@ -84,7 +82,7 @@
               </div>
             </section>
           </div>
-          <div class="cheat__section">
+          <div class="cheat__content">
             <section class="info-list info-list--nested">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
@@ -93,7 +91,7 @@
                     <svg
                       fill="none"
                       height="48"
-                      viewbox="0 0 187 48"
+                      viewBox="0 0 187 48"
                       width="187"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -138,8 +136,8 @@
               </div>
             </section>
           </div>
-          <div class="cheat__section">
-            <h4 class="cheat__section-title font-l">Разряды чисел</h4>
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">Разряды чисел</h4>
             <img
               class="cheat__media cheat__media--full"
               src="../imgs/pvas__place-value.svg"
@@ -244,14 +242,14 @@
                   Распределительное свойство умножения
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"
-                    >Относительно сложения:</label
+                  <span class="info-list__label font-xs"
+                    >Относительно сложения:</span
                   >
                   (a + b) × c = a × c + b × c
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"
-                    >Относительно вычитания:</label
+                  <span class="info-list__label font-xs"
+                    >Относительно вычитания:</span
                   >
                   (a − b) × c = a × c − b × c
                 </div>
@@ -314,84 +312,88 @@
                 <div class="info-list__name font-s">Делится на 2</div>
                 <div class="info-list__example font-m">
                   Последняя цифра —
-                  <span style="color: var(--orange)">0, 2, 4, 6, 8</span>.
-                  Например: 24<span style="color: var(--orange)">6</span>,
-                  52<span style="color: var(--orange)">8</span>.
+                  <span style="color: var(--orange90)">0, 2, 4, 6, 8</span>.
+                  Например: 24<span style="color: var(--orange90)">6</span>,
+                  52<span style="color: var(--orange90)">8</span>.
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 3</div>
                 <div class="info-list__example font-m">
                   Сумма цифр делится на
-                  <span style="color: var(--orange)">3</span>. Например: 141 (1
-                  + 4 + 1 = <span style="color: var(--orange)">6</span>).
+                  <span style="color: var(--orange90)">3</span>. Например: 141
+                  (1 + 4 + 1 = <span style="color: var(--orange90)">6</span>).
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 4</div>
                 <div class="info-list__example font-m">
                   Оканчивается на
-                  <span style="color: var(--orange)">00</span> или две последние
-                  цифры вместе делятся на
-                  <span style="color: var(--orange)">4</span>. Например: 24<span
-                    style="color: var(--orange)"
-                    >16</span
-                  >, 21<span style="color: var(--orange)">00</span>.
+                  <span style="color: var(--orange90)">00</span> или две
+                  последние цифры вместе делятся на
+                  <span style="color: var(--orange90)">4</span>. Например:
+                  24<span style="color: var(--orange90)">16</span>, 21<span
+                    style="color: var(--orange90)"
+                    >00</span
+                  >.
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 5</div>
                 <div class="info-list__example font-m">
                   Оканчивается на
-                  <span style="color: var(--orange)">5</span> или на
-                  <span style="color: var(--orange)">0</span>. Например: 24<span
-                    style="color: var(--orange)"
-                    >0</span
-                  >, 64<span style="color: var(--orange)">5</span>.
+                  <span style="color: var(--orange90)">5</span> или на
+                  <span style="color: var(--orange90)">0</span>. Например:
+                  24<span style="color: var(--orange90)">0</span>, 64<span
+                    style="color: var(--orange90)"
+                    >5</span
+                  >.
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 6</div>
                 <div class="info-list__example font-m">
-                  Делится и на <span style="color: var(--orange)">3</span>, и на
-                  <span style="color: var(--orange)">2</span>. Например: 252 (2
-                  + 5 + 2 = <span style="color: var(--orange)">9</span>).
+                  Делится и на <span style="color: var(--orange90)">3</span>, и
+                  на <span style="color: var(--orange90)">2</span>. Например:
+                  252 (2 + 5 + 2 =
+                  <span style="color: var(--orange90)">9</span>).
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 8</div>
                 <div class="info-list__example font-m">
                   Оканчивается на
-                  <span style="color: var(--orange)">000</span> или три
+                  <span style="color: var(--orange90)">000</span> или три
                   последних цифры вместе делятся на
-                  <span style="color: var(--orange)">8</span>. Например: 6<span
-                    style="color: var(--orange)"
-                    >000</span
-                  >, 4<span style="color: var(--orange)">120</span>.
+                  <span style="color: var(--orange90)">8</span>. Например:
+                  6<span style="color: var(--orange90)">000</span>, 4<span
+                    style="color: var(--orange90)"
+                    >120</span
+                  >.
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 9</div>
                 <div class="info-list__example font-m">
                   Сумма цифр делится на
-                  <span style="color: var(--orange)">9</span>. Например: 621 (6
-                  + 2 + 1 = <span style="color: var(--orange)">9</span>).
+                  <span style="color: var(--orange90)">9</span>. Например: 621
+                  (6 + 2 + 1 = <span style="color: var(--orange90)">9</span>).
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 10</div>
                 <div class="info-list__example font-m">
                   Число оканчивается на
-                  <span style="color: var(--orange)">0</span>. Например:
-                  546<span style="color: var(--orange)">0</span>.
+                  <span style="color: var(--orange90)">0</span>. Например:
+                  546<span style="color: var(--orange90)">0</span>.
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">Делится на 25</div>
                 <div class="info-list__example font-m">
                   Оканчивается на
-                  <span style="color: var(--orange)">00, 25, 50, 75</span>.
-                  Например: 10<span style="color: var(--orange)">50</span>.
+                  <span style="color: var(--orange90)">00, 25, 50, 75</span>.
+                  Например: 10<span style="color: var(--orange90)">50</span>.
                 </div>
               </div>
             </section>
@@ -399,13 +401,14 @@
         </div>
         <div class="cheats__item" id="factorization">
           <h3 class="cheat__title font-xxl">Разложение на множители</h3>
-          <div class="cheat__content cheat__content--stack-16">
+          <div class="cheat__content">
             <div class="note">
               <div class="note__text">
-                Разложить натуральное число на простые множители — значит
-                редставить число в виде произведения простых чисел.<br /><br />
-                Для этого ужно составить два столбца, с делителями и частными
-                от деления числа на простые множители.
+                Разложить натуральное число на&nbsp;простые
+                множители&nbsp;&mdash; значит представить число в&nbsp;виде
+                произведения простых чисел.<br /><br />
+                Для этого нужно составить два столбца, с&nbsp;делителями
+                и&nbsp;частными от&nbsp;деления числа на&nbsp;простые множители.
               </div>
             </div>
             <section class="info-list">
@@ -414,10 +417,10 @@
                   Изначальное число: 3276
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">Частное</label>
-                  <label class="info-list__label font-xs">→</label>
-                  <label class="info-list__label font-xs"
-                    >Следующий делитель</label
+                  <span class="info-list__label font-xs">Частное</span>
+                  <span class="info-list__label font-xs">→</span>
+                  <span class="info-list__label font-xs"
+                    >Следующий делитель</span
                   >
                 </div>
                 <div class="info-list__example font-m">
@@ -459,7 +462,7 @@
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
+          <div class="cheat__content">
             При разложении числа на простые множители произведение одинаковых
             множителей представляют в виде степени:
 
@@ -479,12 +482,12 @@
           <div class="cheat__content cheat__content--stack-24">
             <div class="note">
               <div class="note__text">
-                <span style="color: var(--orange)"
+                <span style="color: var(--orange90)"
                   >Если у дробей одинаковые знаменатели,</span
                 >
                 складывай и вычитай числители как обычные числа, а знаменатель
                 оставляй тем же. <br /><br />
-                <span style="color: var(--orange)"
+                <span style="color: var(--orange90)"
                   >Если у дробей разные знаменатели,</span
                 >
                 сначала приведи их к общему знаменателю, а затем выполни
@@ -498,7 +501,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 140 48"
+                    viewBox="0 0 140 48"
                     width="140"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -562,7 +565,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 140 48"
+                    viewBox="0 0 140 48"
                     width="140"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -626,7 +629,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 90 48"
+                    viewBox="0 0 90 48"
                     width="90"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -694,7 +697,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 143 48"
+                    viewBox="0 0 143 48"
                     width="143"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -808,7 +811,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 110 48"
+                    viewBox="0 0 110 48"
                     width="110"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -882,7 +885,7 @@
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 223 48"
+                    viewBox="0 0 223 48"
                     width="223"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -929,9 +932,9 @@
                       fill="black"
                     ></path>
                   </svg>
-                  <label class="info-list__label font-xs"
+                  <span class="info-list__label font-xs"
                     >где m — число, которое при умножении на b даёт 100
-                  </label>
+                  </span>
                 </div>
               </div>
               <div class="info-list__item">
@@ -939,13 +942,13 @@
                   Как рассчитать сложные проценты
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"
+                  <span class="info-list__label font-xs"
                     >Увеличить число а на N%:
-                  </label>
+                  </span>
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 95 48"
+                    viewBox="0 0 95 48"
                     width="95"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -1005,13 +1008,13 @@
                   </svg>
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"
+                  <span class="info-list__label font-xs"
                     >Уменьшить число а на N%:
-                  </label>
+                  </span>
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 95 48"
+                    viewBox="0 0 95 48"
                     width="95"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -1071,13 +1074,13 @@
                   </svg>
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"
+                  <span class="info-list__label font-xs"
                     >Сложный процент числа а:
-                  </label>
+                  </span>
                   <svg
                     fill="none"
                     height="48"
-                    viewbox="0 0 181 48"
+                    viewBox="0 0 181 48"
                     width="181"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -1194,59 +1197,51 @@
         <div class="cheats__item" id="equations">
           <h3 class="cheat__title font-xxl">Решение простых уравнений</h3>
           <div class="cheat__content cheat__content--stack-24">
-            <div class="note">
-              <div class="note__text">
-                Разложить натуральное число на простые множители — значит
-                редставить число в виде произведения простых чисел.<br /><br />
-                Для этого ужно составить два столбца, с делителями и частными
-                от деления числа на простые множители.
-              </div>
-            </div>
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    a + <span style="color: var(--orange)">x</span> = b
+                    a + <span style="color: var(--orange90)">x</span> = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> = b − а
+                    <span style="color: var(--orange90)">x</span> = b − а
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    a − <span style="color: var(--orange)">x</span> = b
+                    a − <span style="color: var(--orange90)">x</span> = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> = а − b
+                    <span style="color: var(--orange90)">x</span> = а − b
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> − a = b
+                    <span style="color: var(--orange90)">x</span> − a = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> = а + b
+                    <span style="color: var(--orange90)">x</span> = а + b
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    a × <span style="color: var(--orange)">x</span> = b
+                    a × <span style="color: var(--orange90)">x</span> = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
                     <svg
                       fill="none"
                       height="42"
-                      viewbox="0 0 93 42"
+                      viewBox="0 0 93 42"
                       width="93"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1280,22 +1275,22 @@
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> ÷ a = b
+                    <span style="color: var(--orange90)">x</span> ÷ a = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> = ab
+                    <span style="color: var(--orange90)">x</span> = ab
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    a ÷ <span style="color: var(--orange)">x</span> = b
+                    a ÷ <span style="color: var(--orange90)">x</span> = b
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">x</span> = a ÷ b
+                    <span style="color: var(--orange90)">x</span> = a ÷ b
                   </div>
                 </div>
               </div>
@@ -1317,79 +1312,81 @@
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">
-                  Cначала <span class="clr-orange">×</span> и
-                  <span class="clr-orange">÷</span>, потом
-                  <span class="clr-blue">+</span> и
-                  <span class="clr-blue">−</span>:
+                  Cначала <span style="color: var(--orange90)">×</span> и
+                  <span style="color: var(--orange90)">÷</span>, потом
+                  <span style="color: var(--blue60)">+</span> и
+                  <span style="color: var(--blue60)">−</span>:
                 </div>
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    a <span class="clr-blue">+</span> b
-                    <span class="clr-orange">×</span> c
+                    a <span style="color: var(--blue60)">+</span> b
+                    <span style="color: var(--orange90)">×</span> c
                   </div>
                   <div class="info-list__part">
-                    a <span class="clr-blue">−</span> b
-                    <span class="clr-orange">×</span> c
+                    a <span style="color: var(--blue60)">−</span> b
+                    <span style="color: var(--orange90)">×</span> c
                   </div>
                   <div class="info-list__part">
-                    a <span class="clr-blue">+</span> b
-                    <span class="clr-orange">÷</span> c
+                    a <span style="color: var(--blue60)">+</span> b
+                    <span style="color: var(--orange90)">÷</span> c
                   </div>
                   <div class="info-list__part">
-                    a <span class="clr-blue">−</span> b
-                    <span class="clr-orange">÷</span> c
+                    a <span style="color: var(--blue60)">−</span> b
+                    <span style="color: var(--orange90)">÷</span> c
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">
-                  Cначала действия в <span class="clr-orange">( )</span>, потом
+                  Cначала действия в
+                  <span style="color: var(--orange90)">( )</span>, потом
                   остальные:
                 </div>
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    (a <span class="clr-orange">+</span> b)
-                    <span class="clr-blue">×</span> c
+                    (a <span style="color: var(--orange90)">+</span> b)
+                    <span style="color: var(--blue60)">×</span> c
                   </div>
                   <div class="info-list__part">
-                    c <span class="clr-blue">×</span> (a
-                    <span class="clr-orange">−</span> b)
+                    c <span style="color: var(--blue60)">×</span> (a
+                    <span style="color: var(--orange90)">−</span> b)
                   </div>
                   <div class="info-list__part">
-                    (a <span class="clr-orange">+</span> b)
-                    <span class="clr-blue">÷</span> c
+                    (a <span style="color: var(--orange90)">+</span> b)
+                    <span style="color: var(--blue60)">÷</span> c
                   </div>
                   <div class="info-list__part">
-                    c <span class="clr-blue">÷</span> (a
-                    <span class="clr-orange">−</span> b)
+                    c <span style="color: var(--blue60)">÷</span> (a
+                    <span style="color: var(--orange90)">−</span> b)
                   </div>
                 </div>
               </div>
               <div class="info-list__item">
                 <div class="info-list__name font-s">
-                  Cначала действия в <span class="clr-orange">( )</span>,
-                  <span class="clr-orange">×</span> и
-                  <span class="clr-orange">÷</span>,<br />
-                  в конце <span class="clr-blue">+</span> и
-                  <span class="clr-blue">-</span>:
+                  Cначала действия в
+                  <span style="color: var(--orange90)">( )</span>,
+                  <span style="color: var(--orange90)">×</span> и
+                  <span style="color: var(--orange90)">÷</span>,<br />
+                  в конце <span style="color: var(--blue60)">+</span> и
+                  <span style="color: var(--blue60)">-</span>:
                 </div>
                 <div
                   class="info-list__example info-list__example--single font-m"
                 >
                   <div class="info-list__part">
-                    (a <span class="clr-orange">+</span> b)
-                    <span class="clr-orange">×</span> c
-                    <span class="clr-blue">+</span> d
+                    (a <span style="color: var(--orange90)">+</span> b)
+                    <span style="color: var(--orange90)">×</span> c
+                    <span style="color: var(--blue60)">+</span> d
                   </div>
                   <div class="info-list__part">
-                    (a <span class="clr-orange">+</span> b)
-                    <span class="clr-orange">÷</span> c
-                    <span class="clr-blue">+</span> d
+                    (a <span style="color: var(--orange90)">+</span> b)
+                    <span style="color: var(--orange90)">÷</span> c
+                    <span style="color: var(--blue60)">+</span> d
                   </div>
                   <div class="info-list__part">
-                    d <span class="clr-blue">+</span> (a
-                    <span class="clr-orange">+</span> b)
-                    <span class="clr-orange">÷</span> c
+                    d <span style="color: var(--blue60)">+</span> (a
+                    <span style="color: var(--orange90)">+</span> b)
+                    <span style="color: var(--orange90)">÷</span> c
                   </div>
                 </div>
               </div>
@@ -1604,3 +1601,4 @@
     <script src="../js/search.js"></script>
   </body>
 </html>
+

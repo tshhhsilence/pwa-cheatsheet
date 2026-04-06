@@ -1,0 +1,163 @@
+.--grid-three-columns {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.flowchart {
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.flowchart__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.flowchart__branch {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.branch__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.branch__example {
+  background-color: var(--w);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.branch__example-part {
+  display: flex;
+  justify-content: space-around;
+}
+.flowchart__arrows {
+  flex: 100%;
+}
+.branch__description {
+  color: var(--b48);
+}
+#bukvy {
+  .info-list__example,
+  .info-list__name {
+    text-align: center;
+  }
+
+  .info-list--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 8px;
+    .info-list__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      border-radius: 8px;
+      padding: 12px;
+    }
+  }
+}
+
+#zvuki {
+  .info-list__part {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--w48);
+    width: 66px;
+  }
+
+  .info-list__name--column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .info-list__name--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .info-list__example--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .--custom-flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .info-list__part--column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+#pravopisanie-soglasnyh {
+  .info-list__item {
+    text-align: center;
+  }
+
+  .info-list--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 8px;
+    .info-list__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      border-radius: 8px;
+      padding: 12px;
+    }
+  }
+}
+
+#prilagatelnoe {
+  .cheat__content-example {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--grey);
+  }
+  .example__visual {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .example__divider {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .example__answer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .example__answer-traits {
+    text-align: end;
+  }
+}

@@ -49,9 +49,7 @@
           <h1 class="header__title font-m">Математика</h1>
           <h2 class="header__subtitle font-s">7-8 класс</h2>
         </div>
-        <button>
-          <img />
-        </button>
+        <div style="visibility: hidden"></div>
       </div>
     </header>
     <div aria-hidden="true" class="page-spacer"></div>
@@ -66,57 +64,57 @@
       <section class="cheats__list">
         <div class="cheats__item" id="notation">
           <h3 class="cheat__title font-xxl">Условные обозначения</h3>
-          <div class="cheat__section">
+          <div class="cheat__content">
             <section class="info-list">
               <div class="info-list__item info-list__item--with-dividers">
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Стороны треугольника
-                  </label>
+                  </span>
                   a; b; c
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Углы треугольника
-                  </label>
+                  </span>
                   α; β; γ
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"> Площадь </label>a; b;
+                  <span class="info-list__label font-xs"> Площадь </span>
                   S
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Радиус вписанной окружности
-                  </label>
+                  </span>
                   r
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Радиус описанной окружности
-                  </label>
+                  </span>
                   R
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
-                    Высота к стороне a
-                  </label>
+                  <span class="info-list__label font-xs">
+                    Высота к стороне <i>a</i>
+                  </span>
                   <span>h<sub>a</sub></span>
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
-                    Биссектриса к стороне c
-                  </label>
+                  <span class="info-list__label font-xs">
+                    Биссектриса к стороне <i>c</i>
+                  </span>
                   <span>l<sub>c</sub></span>
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs">
-                    Медиана к стороне c
-                  </label>
+                  <span class="info-list__label font-xs">
+                    Медиана к стороне <i>c</i>
+                  </span>
                   <span>m<sub>c</sub></span>
                 </div>
                 <div class="info-list__example font-m">
-                  <label class="info-list__label font-xs"> Полупериметр </label>
+                  <span class="info-list__label font-xs"> Полупериметр </span>
                   p
                 </div>
               </div>
@@ -125,14 +123,14 @@
         </div>
         <div class="cheats__item" id="powers">
           <h3 class="cheat__title font-xxl">Свойства степеней</h3>
-          <div class="cheat__section">
+          <div class="cheat__content">
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
                   <svg
                     fill="none"
                     height="52"
-                    viewbox="0 0 288 52"
+                    viewBox="0 0 288 52"
                     width="288"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -160,7 +158,7 @@
               </div>
             </section>
           </div>
-          <div class="cheat__section">
+          <div class="cheat__content">
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
@@ -177,7 +175,7 @@
                   <svg
                     fill="none"
                     height="42"
-                    viewbox="0 0 70 42"
+                    viewBox="0 0 70 42"
                     width="70"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -257,7 +255,7 @@
                   <svg
                     fill="none"
                     height="42"
-                    viewbox="0 0 92 42"
+                    viewBox="0 0 92 42"
                     width="92"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -384,7 +382,7 @@
                   <svg
                     fill="none"
                     height="42"
-                    viewbox="0 0 52 42"
+                    viewBox="0 0 52 42"
                     width="52"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -415,7 +413,7 @@
                   <svg
                     fill="none"
                     height="30"
-                    viewbox="0 0 59 30"
+                    viewBox="0 0 59 30"
                     width="59"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -461,7 +459,7 @@
                   <svg
                     fill="none"
                     height="28"
-                    viewbox="0 0 84 28"
+                    viewBox="0 0 84 28"
                     width="84"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -508,7 +506,7 @@
                   <svg
                     fill="none"
                     height="24"
-                    viewbox="0 0 100 24"
+                    viewBox="0 0 100 24"
                     width="100"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -545,9 +543,9 @@
                       stroke="black"
                     ></path>
                   </svg>
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Если n — чётное, то правило верно для a, b ≥ 0
-                  </label>
+                  </span>
                 </div>
               </div>
               <div class="info-list__item">
@@ -555,7 +553,7 @@
                   <svg
                     fill="none"
                     height="43"
-                    viewbox="0 0 56 43"
+                    viewBox="0 0 56 43"
                     width="56"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -618,9 +616,9 @@
                       stroke="black"
                     ></path>
                   </svg>
-                  <label class="info-list__label font-xs">
+                  <span class="info-list__label font-xs">
                     Если n — чётное, то правило верно для a ≥ 0, b &gt; 0
-                  </label>
+                  </span>
                 </div>
               </div>
               <div class="info-list__item">
@@ -628,7 +626,7 @@
                   <svg
                     fill="none"
                     height="21"
-                    viewbox="0 0 88 21"
+                    viewBox="0 0 88 21"
                     width="88"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -660,7 +658,7 @@
                   <svg
                     fill="none"
                     height="23"
-                    viewbox="0 0 75 23"
+                    viewBox="0 0 75 23"
                     width="75"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -700,7 +698,7 @@
                   <svg
                     fill="none"
                     height="23"
-                    viewbox="0 0 85 23"
+                    viewBox="0 0 85 23"
                     width="85"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -742,7 +740,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 61 42"
+                        viewBox="0 0 61 42"
                         width="61"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -775,7 +773,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 99 42"
+                        viewBox="0 0 99 42"
                         width="99"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -809,7 +807,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 53 42"
+                        viewBox="0 0 53 42"
                         width="53"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -838,7 +836,7 @@
                       <svg
                         fill="none"
                         height="20"
-                        viewbox="0 0 180 20"
+                        viewBox="0 0 180 20"
                         width="180"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -868,7 +866,7 @@
                         <svg
                           fill="none"
                           height="20"
-                          viewbox="0 0 89 20"
+                          viewBox="0 0 89 20"
                           width="89"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -886,7 +884,7 @@
                         <svg
                           fill="none"
                           height="42"
-                          viewbox="0 0 44 42"
+                          viewBox="0 0 44 42"
                           width="44"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -931,7 +929,7 @@
                       <svg
                         fill="none"
                         height="123"
-                        viewbox="0 0 140 123"
+                        viewBox="0 0 140 123"
                         width="140"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1013,7 +1011,7 @@
                       <svg
                         fill="none"
                         height="126"
-                        viewbox="0 0 164 126"
+                        viewBox="0 0 164 126"
                         width="164"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1129,7 +1127,7 @@
                     <svg
                       fill="none"
                       height="42"
-                      viewbox="0 0 162 42"
+                      viewBox="0 0 162 42"
                       width="162"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1203,7 +1201,7 @@
                         <svg
                           fill="none"
                           height="42"
-                          viewbox="0 0 57 42"
+                          viewBox="0 0 57 42"
                           width="57"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -1236,7 +1234,7 @@
                         <svg
                           fill="none"
                           height="42"
-                          viewbox="0 0 61 42"
+                          viewBox="0 0 61 42"
                           width="61"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -1270,7 +1268,7 @@
                       <svg
                         fill="none"
                         height="121"
-                        viewbox="0 0 140 121"
+                        viewBox="0 0 140 121"
                         width="140"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1344,19 +1342,21 @@
           </div>
           <div class="cheat__content">
             <div class="cheat__section">
-              <h4 class="cheat__section-title font-l">Площадь</h4>
+              <h4 class="cheat__section-title font-l">
+                Площади подобных треугольников
+              </h4>
               <section class="info-list">
                 <div class="info-list__item">
                   <div
                     class="info-list__example info-list__example--single font-m"
                   >
-                    <label class="info-list__label font-xs">
+                    <span class="info-list__label font-xs">
                       Относятся как квадрат коэффициента подобия:
-                    </label>
+                    </span>
                     <svg
                       fill="none"
                       height="42"
-                      viewbox="0 0 44 42"
+                      viewBox="0 0 44 42"
                       width="44"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1381,14 +1381,16 @@
           </div>
           <div class="cheat__content">
             <div class="cheat__section">
-              <h4 class="cheat__section-title font-l">Площадь</h4>
+              <h4 class="cheat__section-title font-l">
+                Прямоугольный треугольник
+              </h4>
               <section class="info-list">
                 <div class="info-list__item">
                   <div class="info-list__example font-m">
                     <svg
                       fill="none"
                       height="169"
-                      viewbox="0 0 288 169"
+                      viewBox="0 0 288 169"
                       width="288"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1454,7 +1456,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 45 42"
+                        viewBox="0 0 45 42"
                         width="45"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1489,7 +1491,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 46 42"
+                        viewBox="0 0 46 42"
                         width="46"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1518,7 +1520,7 @@
                       <svg
                         fill="none"
                         height="42"
-                        viewbox="0 0 83 42"
+                        viewBox="0 0 83 42"
                         width="83"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1625,9 +1627,9 @@
                 </div>
                 <div class="info-list__example font-m">
                   <span
-                    ><span style="color: var(--orange)">10</span>a +
-                    <span style="color: var(--orange)">25</span>b =
-                    <span style="color: var(--orange)">5</span>(2a + 5b)</span
+                    ><span style="color: var(--orange90)">10</span>a +
+                    <span style="color: var(--orange90)">25</span>b =
+                    <span style="color: var(--orange90)">5</span>(2a + 5b)</span
                   >
                 </div>
               </div>
@@ -1637,11 +1639,11 @@
                 </div>
                 <div class="info-list__example font-m">
                   <span
-                    >х<span style="color: var(--orange)">у</span> − 5<span
-                      style="color: var(--orange)"
+                    >х<span style="color: var(--orange90)">у</span> − 5<span
+                      style="color: var(--orange90)"
                       >y</span
                     >
-                    − 3a + 9 = <span style="color: var(--orange)">y</span>(x −
+                    − 3a + 9 = <span style="color: var(--orange90)">y</span>(x −
                     5) − 3(a − 3)</span
                   >
                 </div>
@@ -1660,20 +1662,20 @@
         <div class="cheats__item" id="function-graphs">
           <h3 class="cheat__title font-xxl">Графики функций и их свойства</h3>
           <div class="formulas__list">
-            <h4 class="cheat__section-title font-l">
+            <h4 class="formulas__list-title font-l">
               Линейная функция: y = kx + b
             </h4>
             <div class="formulas__item">
               <div class="formulas__text font-s">
                 <div class="formulas__name">Функция возрастает</div>
                 <div class="formulas__expression">
-                  <span style="color: var(--orange)">k &gt; 0</span>
+                  <span style="color: var(--orange90)">k &gt; 0</span>
                 </div>
               </div>
               <svg
                 fill="none"
                 height="141"
-                viewbox="0 0 141 141"
+                viewBox="0 0 141 141"
                 width="141"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1708,13 +1710,13 @@
               <div class="formulas__text font-s">
                 <div class="formulas__name">Функция убывает</div>
                 <div class="formulas__expression">
-                  <span style="color: var(--orange)">k &lt; 0</span>
+                  <span style="color: var(--orange90)">k &lt; 0</span>
                 </div>
               </div>
               <svg
                 fill="none"
                 height="141"
-                viewbox="0 0 141 141"
+                viewBox="0 0 141 141"
                 width="141"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1748,16 +1750,16 @@
             <div class="formulas__item">
               <div class="formulas__text font-s">
                 <div class="formulas__name">
-                  Пересечение с осью Oy выше начала координат
+                  Пересечение с осью <i>Oy</i> выше начала координат
                 </div>
                 <div class="formulas__expression">
-                  <span style="color: var(--orange)">b &gt; 0</span>
+                  <span style="color: var(--orange90)">b &gt; 0</span>
                 </div>
               </div>
               <svg
                 fill="none"
                 height="141"
-                viewbox="0 0 141 141"
+                viewBox="0 0 141 141"
                 width="141"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1792,16 +1794,16 @@
             <div class="formulas__item">
               <div class="formulas__text font-s">
                 <div class="formulas__name">
-                  Пересечение с осью Oy ниже начала координат
+                  Пересечение с осью <i>Oy</i> ниже начала координат
                 </div>
                 <div class="formulas__expression">
-                  <span style="color: var(--orange)">b &lt; 0</span>
+                  <span style="color: var(--orange90)">b &lt; 0</span>
                 </div>
               </div>
               <svg
                 fill="none"
                 height="141"
-                viewbox="0 0 141 141"
+                viewBox="0 0 141 141"
                 width="141"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1837,7 +1839,7 @@
         </div>
         <div class="cheats__item" id="quadratic-equation">
           <h3 class="cheat__title font-xxl">Решение квадратного уравнения</h3>
-          <div class="cheat__content cheat__content--stack-16">
+          <div class="cheat__content">
             <section class="info-list">
               <div class="info-list__item">
                 <div
@@ -1848,8 +1850,8 @@
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">
               Общий случай: b ≠ 0; c ≠ 0
             </h4>
             <section class="info-list">
@@ -1861,7 +1863,7 @@
                   <div class="info-list__part">D &lt; 0</div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Нет решений</span>
+                    <span style="color: var(--orange90)">Нет решений</span>
                   </div>
                 </div>
                 <div class="info-list__example font-m">
@@ -1871,7 +1873,7 @@
                     <svg
                       fill="none"
                       height="42"
-                      viewbox="0 0 55 42"
+                      viewBox="0 0 55 42"
                       width="55"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1901,7 +1903,7 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Одно решение</span>
+                    <span style="color: var(--orange90)">Одно решение</span>
                   </div>
                 </div>
                 <div class="info-list__example font-m">
@@ -1911,7 +1913,7 @@
                     <svg
                       fill="none"
                       height="88"
-                      viewbox="0 0 92 88"
+                      viewBox="0 0 92 88"
                       width="92"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -1964,21 +1966,21 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Два решения</span>
+                    <span style="color: var(--orange90)">Два решения</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">Теорема Виета</h4>
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">Теорема Виета</h4>
             <section class="info-list">
               <div class="info-list__item info-list__item--row">
                 <div class="info-list__example font-m">
                   <svg
                     fill="none"
                     height="42"
-                    viewbox="0 0 80 42"
+                    viewBox="0 0 80 42"
                     width="80"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -2011,7 +2013,7 @@
                   <svg
                     fill="none"
                     height="42"
-                    viewbox="0 0 62 42"
+                    viewBox="0 0 62 42"
                     width="62"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -2039,8 +2041,8 @@
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">
               Формула для чётного второго коэффициента
             </h4>
             <section class="info-list">
@@ -2054,7 +2056,7 @@
                     <svg
                       fill="none"
                       height="18"
-                      viewbox="0 0 84 18"
+                      viewBox="0 0 84 18"
                       width="84"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2070,7 +2072,7 @@
                     <svg
                       fill="none"
                       height="19"
-                      viewbox="0 0 40 19"
+                      viewBox="0 0 40 19"
                       width="40"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2082,7 +2084,7 @@
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Нет решений</span>
+                    <span style="color: var(--orange90)">Нет решений</span>
                   </div>
                 </div>
                 <div class="info-list__example font-m">
@@ -2092,7 +2094,7 @@
                     <svg
                       fill="none"
                       height="42"
-                      viewbox="0 0 47 42"
+                      viewBox="0 0 47 42"
                       width="47"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2122,7 +2124,7 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Одно решение</span>
+                    <span style="color: var(--orange90)">Одно решение</span>
                   </div>
                 </div>
                 <div class="info-list__example font-m">
@@ -2132,7 +2134,7 @@
                     <svg
                       fill="none"
                       height="88"
-                      viewbox="0 0 92 88"
+                      viewBox="0 0 92 88"
                       width="92"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2185,14 +2187,14 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Два решения</span>
+                    <span style="color: var(--orange90)">Два решения</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">Случай: b = 0; c = 0</h4>
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">Случай: b = 0; c = 0</h4>
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
@@ -2200,7 +2202,7 @@
                     <svg
                       fill="none"
                       height="14"
-                      viewbox="0 0 51 14"
+                      viewBox="0 0 51 14"
                       width="51"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2213,14 +2215,14 @@
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">x = 0</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Одно решение</span>
+                    <span style="color: var(--orange90)">Одно решение</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">Случай: b = 0; c ≠ 0</h4>
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">Случай: b = 0; c ≠ 0</h4>
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
@@ -2228,7 +2230,7 @@
                     <svg
                       fill="none"
                       height="14"
-                      viewbox="0 0 79 14"
+                      viewBox="0 0 79 14"
                       width="79"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2243,7 +2245,7 @@
                     <svg
                       fill="none"
                       height="44"
-                      viewbox="0 0 58 44"
+                      viewBox="0 0 58 44"
                       width="58"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2275,13 +2277,13 @@
                 </div>
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Если</span>
+                    <span style="color: var(--orange90)">Если</span>
                   </div>
                   <div class="info-list__part">
                     <svg
                       fill="none"
                       height="44"
-                      viewbox="0 0 53 44"
+                      viewBox="0 0 53 44"
                       width="53"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2312,18 +2314,18 @@
                   </div>
                   <div class="info-list__part">→</div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Нет решений</span>
+                    <span style="color: var(--orange90)">Нет решений</span>
                   </div>
                 </div>
                 <div class="info-list__example font-m">
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Если</span>
+                    <span style="color: var(--orange90)">Если</span>
                   </div>
                   <div class="info-list__part">
                     <svg
                       fill="none"
                       height="44"
-                      viewbox="0 0 53 44"
+                      viewBox="0 0 53 44"
                       width="53"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2357,7 +2359,7 @@
                     <svg
                       fill="none"
                       height="92"
-                      viewbox="0 0 72 92"
+                      viewBox="0 0 72 92"
                       width="72"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2426,14 +2428,14 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Два решения</span>
+                    <span style="color: var(--orange90)">Два решения</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="cheat__content cheat__content--stack-16">
-            <h4 class="cheat__section-title font-l">Случай: b ≠ 0; c = 0</h4>
+          <div class="cheat__content">
+            <h4 class="cheat__content-title font-l">Случай: b ≠ 0; c = 0</h4>
             <section class="info-list">
               <div class="info-list__item">
                 <div class="info-list__example font-m">
@@ -2441,7 +2443,7 @@
                     <svg
                       fill="none"
                       height="14"
-                      viewbox="0 0 89 14"
+                      viewBox="0 0 89 14"
                       width="89"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2457,7 +2459,7 @@
                     <svg
                       fill="none"
                       height="68"
-                      viewbox="0 0 134 68"
+                      viewBox="0 0 134 68"
                       width="134"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -2491,7 +2493,7 @@
                     </svg>
                   </div>
                   <div class="info-list__part">
-                    <span style="color: var(--orange)">Два решения</span>
+                    <span style="color: var(--orange90)">Два решения</span>
                   </div>
                 </div>
               </div>

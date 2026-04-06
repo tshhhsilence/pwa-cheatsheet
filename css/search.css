@@ -83,7 +83,7 @@ body.search-active .search-shell {
 }
 
 .search-box {
-  width: 344px;
+  width: clamp(344px, calc(100% - 32px), 624px);
   margin: auto;
   position: relative;
 }
