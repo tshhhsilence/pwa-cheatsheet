@@ -4,6 +4,141 @@
   align-items: center;
   justify-items: center;
 }
+.info-list__part--column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.info-list__name--column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info-list__name--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+.info-list__example--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.underline__double {
+  text-decoration: underline double;
+  text-underline-offset: 5px;
+}
+.underline__solid {
+  text-decoration: underline solid;
+  text-underline-offset: 5px;
+}
+.underline__wavy {
+  text-decoration: underline wavy;
+  text-underline-offset: 5px;
+}
+.underline__dashed {
+  text-decoration: underline dashed;
+  text-underline-offset: 5px;
+}
+.underline__dashed-dot {
+  position: relative;
+  display: inline-block;
+}
+
+.underline__dashed-dot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 1px;
+  background-color: currentColor;
+
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='1' viewBox='0 0 16 1'%3E%3Crect x='0' y='0' width='6' height='1' fill='black'/%3E%3Crect x='10' y='0' width='2' height='1' fill='black'/%3E%3C/svg%3E")
+    left center / 16px 1px repeat-x;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='1' viewBox='0 0 16 1'%3E%3Crect x='0' y='0' width='6' height='1' fill='black'/%3E%3Crect x='10' y='0' width='2' height='1' fill='black'/%3E%3C/svg%3E")
+    left center / 16px 1px repeat-x;
+}
+
+.suffix {
+  position: relative;
+  display: inline-block;
+}
+
+.suffix__mark {
+  position: absolute;
+  left: -1px;
+  top: -5px;
+  width: calc(100% + 2px);
+  height: 10px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.suffix__mark path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.root {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.root__mark {
+  position: absolute;
+  left: -1px;
+  top: -5px;
+  width: calc(100% + 2px);
+  height: 10px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.root__mark path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.prefix {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.prefix__mark {
+  position: absolute;
+  left: -1px;
+  top: -5px;
+  width: calc(100% + 2px);
+  height: 10px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.prefix__mark path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
 
 .flowchart {
   border-radius: 12px;
@@ -82,31 +217,9 @@
     width: 66px;
   }
 
-  .info-list__name--column {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .info-list__name--row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .info-list__example--row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-  }
   .--custom-flex {
     display: flex;
     justify-content: space-evenly;
-  }
-  .info-list__part--column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
   }
 }
 
@@ -159,5 +272,50 @@
   }
   .example__answer-traits {
     text-align: end;
+  }
+}
+
+#predlozhenie {
+  .--grid-three-columns {
+    justify-items: start;
+  }
+}
+
+#chleny-predlozheniya {
+  .cheat__content-example {
+    text-align: center;
+  }
+}
+#suschestvitelnoe {
+  .info-list__name--column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .info-list__name--row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .word__ending-square {
+    border: 1px solid var(--orange60);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+#alternating-vowels {
+  .note {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .note__example {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--w48);
   }
 }

@@ -60,6 +60,14 @@
   background-color: var(--blue60) !important;
 }
 
+.--bg-red60 {
+  background-color: var(--red60) !important;
+  color: var(--w) !important;
+}
+.--bg-red10 {
+  background-color: var(--red10) !important;
+}
+
 *,
 *::before,
 *::after {
@@ -284,25 +292,4 @@ main {
 .pwa__close {
   width: 24px;
   height: 24px;
-}
-#suschestvitelnoe {
-  .info-list__name--column {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .info-list__name--row {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  .word__ending-square {
-    border: 1px solid var(--orange60);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 14px;
-    height: 14px;
-  }
 }
