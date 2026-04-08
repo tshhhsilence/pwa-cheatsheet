@@ -78,6 +78,10 @@
   font-weight: 400;
   font-variant-numeric: lining-nums proportional-nums;
 }
+ul {
+  padding-inline-start: 1em;
+  list-style-position: inside;
+}
 img {
   pointer-events: none;
 }

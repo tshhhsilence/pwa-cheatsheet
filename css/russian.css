@@ -140,6 +140,15 @@
   vector-effect: non-scaling-stroke;
 }
 
+.word__ending-square {
+  border: 1px solid var(--orange60);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+}
+
 .flowchart {
   border-radius: 12px;
   padding: 12px;
@@ -281,7 +290,8 @@
   }
 }
 
-#chleny-predlozheniya {
+#chleny-predlozheniya,
+#members-and-parts-of-speech {
   .cheat__content-example {
     text-align: center;
   }
@@ -298,17 +308,10 @@
     align-items: baseline;
     justify-content: space-between;
   }
-  .word__ending-square {
-    border: 1px solid var(--orange60);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 14px;
-    height: 14px;
-  }
 }
 
-#alternating-vowels {
+#alternating-vowels,
+#soft-hard-signs {
   .note {
     flex-wrap: wrap;
     gap: 8px;
@@ -317,5 +320,28 @@
     border-radius: 8px;
     padding: 12px;
     background-color: var(--w48);
+  }
+}
+
+#vowels-after-sibilants {
+  .branch__example-part {
+    justify-content: flex-start;
+  }
+}
+
+.note__text--p-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#comma-homogeneous {
+  .info-list__example {
+    align-items: center;
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
   }
 }
