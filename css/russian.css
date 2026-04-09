@@ -335,13 +335,53 @@
   gap: 10px;
 }
 
-#comma-homogeneous {
+#comma-homogeneous,
+#vocative {
   .info-list__example {
     align-items: center;
-    > span {
+    span:not(.--no-flex) {
       display: flex;
       align-items: center;
       gap: 4px;
     }
+  }
+}
+
+#participle {
+  .info-list--only-names {
+    gap: 4px;
+    .info-list__name {
+      border-radius: 12px;
+    }
+    .info-list__divider {
+      text-align: center;
+    }
+  }
+}
+
+.info-list__part--boxed {
+  border-radius: 8px;
+  padding: 12px;
+  background-color: var(--w48);
+}
+
+.boxed--mini {
+  padding: 0 4px;
+  border-radius: 2px;
+  background-color: var(--w);
+}
+
+#particle {
+  .info-list__item--equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+#parenthetical-words {
+  .info-list__example {
+    text-align: center;
   }
 }

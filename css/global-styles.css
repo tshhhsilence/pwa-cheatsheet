@@ -79,8 +79,12 @@
   font-variant-numeric: lining-nums proportional-nums;
 }
 ul {
+  padding-inline-start: 2em;
+  list-style-position: outside;
+}
+ol {
   padding-inline-start: 1em;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 img {
   pointer-events: none;

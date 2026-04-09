@@ -196,3 +196,13 @@ body.search-active .search-shell {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.--row {
+  flex-direction: row;
+}
+.--wrap {
+  flex-wrap: wrap;
+}
+.--gap8 {
+  gap: 8px;
+}
