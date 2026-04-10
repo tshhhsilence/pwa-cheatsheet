@@ -67,6 +67,9 @@
 .--bg-red10 {
   background-color: var(--red10) !important;
 }
+.--bg-orange10 {
+  background-color: var(--orange10) !important;
+}
 
 *,
 *::before,

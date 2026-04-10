@@ -233,22 +233,24 @@
 }
 
 #pravopisanie-soglasnyh {
-  .info-list__item {
-    text-align: center;
-  }
-
-  .info-list--row {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    gap: 8px;
+  .--2-4 {
     .info-list__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 56px;
-      border-radius: 8px;
-      padding: 12px;
+      text-align: center;
+    }
+
+    .info-list--row {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      gap: 8px;
+      .info-list__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        border-radius: 8px;
+        padding: 12px;
+      }
     }
   }
 }
@@ -347,18 +349,15 @@
   }
 }
 
-#participle {
-  .info-list--only-names {
-    gap: 4px;
-    .info-list__name {
-      border-radius: 12px;
-    }
-    .info-list__divider {
-      text-align: center;
-    }
+.info-list--only-names {
+  gap: 4px;
+  .info-list__name {
+    border-radius: 12px;
+  }
+  .info-list__divider {
+    text-align: center;
   }
 }
-
 .info-list__part--boxed {
   border-radius: 8px;
   padding: 12px;
@@ -371,13 +370,11 @@
   background-color: var(--w);
 }
 
-#particle {
-  .info-list__item--equation {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+.info-list__item--equation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #parenthetical-words {
